@@ -4,7 +4,9 @@ c=[]
 for i in range(n):
     b=int(input("enter"))
     a.append(b)
-print(a)
-for i in range(len(a)-1,-1,-1):
-    c.append(a[i])
-print(c)
+x=sorted(a)
+if(x.count(0)==len(x)):
+    print(a[0])
+else:
+    for i in range(len(x)-1,-1,-1):
+        print(x[i])
